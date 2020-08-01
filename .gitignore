@@ -1,2 +1,4 @@
 .DS_Store
-./Notebooks/config.py
+notebooks/config.py
+node_modules
+package-lock.json
