@@ -1,4 +1,4 @@
 .DS_Store
-notebooks/config.py
 node_modules
 package-lock.json
+/Ntoebooks/config.py
