@@ -50,10 +50,23 @@
   border-radius: 50%;
 }
 
-.api_song{
+.api_song {
   width: 1485px;
   height: 700px;
 }
+
+/*Image movement*/
+#peeps {
+  position: relative;
+  cursor: pointer;
+}
+
+.elated-poitras-e16346{
+  width: 1485px;
+  height: 700px;
+}
+
+
 
 /*
 .wrapper{

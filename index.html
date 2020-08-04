@@ -8,7 +8,7 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> -->
 
   <!--Import Google Icon Font-->
-  <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">-->
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -38,6 +38,8 @@
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   <!-- load jQuery and tablesorter scripts -->
   <script type="text/javascript" src="static/js/jquery.tablesorter.js"></script>
+  <!--   Tableau javascript API   -->
+  <script src="https://clientreporting.theinformationlab.co.uk/javascripts/api/tableau-2.min.js"></script>
 </head>
 
 <!-- <div class="wrapper"> -->
@@ -47,20 +49,29 @@
   <div class="nav-wrapper black ">
 
     <!-- <a href="#" class="brand-logo center">CCASS Project 2</a> -->
-    <a href="#" class="brand-logo  " id="logo-canvas">Music in Motion</a>
+    <a href="#" class="brand-logo  " id="logo-canvas">Music beyond the beats </a>
+    <!-- decide Music beyond the beats  Music in Motion-->
 
 
     <ul id="nav-mobile" class="right hide-on-med-and-down ">
       <div class="action-btn ">
         <!-- <li> -->
         <!-- <a class="white-text material-icons main_pg btn-floating btn-large light blue" href="#main_menu"><i class="large material-icons">menu</i></a></li> -->
-        <li><a class="white-text material-icons main_pg" href="#main_menu"><i class="material-icons ">home</i></a>
+        <li><a class="white-text  main_pg" href="#main_menu">
+            <h5>home</h5>
+          </a>
         </li>
-        <li><a class="white-text material-icons analysis_pg" href="#main_menu"><i
-              class="material-icons ">analysis</i></a>
+        <li><a class="white-text  analysis_pg" href="#analysis">
+            <h5>analysis</h5>
+          </a>
         </li>
-        <li><a class="white-text material-icons prediction_pg" href="#main_menu"><i
-              class="material-icons ">prediction</i></a>
+        <li><a class="white-text  prediction_pg" href="#prediction">
+            <h5>prediction</h5>
+          </a>
+        </li>
+        <li><a class="white-text  ml_pg" href="#machine_learning">
+            <h5>ml</h5>
+          </a>
         </li>
       </div>
     </ul>
@@ -72,7 +83,7 @@
 <div class="main">
   <!--First Picture-->
   <div class="parallax-container">
-    <div class="parallax center"><img src="images/Digital_Music_Background.jpg"></div>
+    <div class="parallax "><img src="images/Digital_Music_Background.jpg"></div>
   </div>
 
   <!--First section with What are we doing in our project-->
@@ -97,16 +108,46 @@
           src="https://media-exp1.licdn.com/dms/image/C4D03AQExIYzH9JCKSQ/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=HeSuj1hmvWvJ7v_nbCePlVqx1GrwiLfEFVYbj_Nc2h8">
         <br>
         Chan
-        <img class="materialboxed rad" width="200"
-          src="https://media-exp1.licdn.com/dms/image/C4D03AQF5h6wVXLrO9Q/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=fGvQI5ngHdzN8N1WlYPsd8zO3aJvgVyf96xjwgNFtO8">
-        <br>
-        Chris
+
+      <div class="row">
+        <div class="col s3">
+          <img class="materialboxed rad" width="200"
+            src="https://media-exp1.licdn.com/dms/image/C4D03AQF5h6wVXLrO9Q/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=fGvQI5ngHdzN8N1WlYPsd8zO3aJvgVyf96xjwgNFtO8">
+        </div>
+        <!--Moving picture -->
+        <div class="col s9 ">
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/256217892&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          <div
+            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/ledzeppelin" title="Led Zeppelin" target="_blank"
+              style="color: #cccccc; text-decoration: none;">Led Zeppelin</a> · <a
+              href="https://soundcloud.com/ledzeppelin/stairway-to-heaven-2" title="Stairway to Heaven (Remaster)"
+              target="_blank" style="color: #cccccc; text-decoration: none;">
+              Stairway to Heaven (Remaster)</a></div>
+          <!--<img id="peeps" src="https://i.pinimg.com/564x/13/a7/ab/13a7abd59336d08928aedc775b2e4091.jpg">-->
+        </div>
+      </div>
+
+
+      <br>
+      Chris
       <div class="row">
         <div class="col s3">
           <img class="materialboxed rad" width="200"
             src="https://media-exp1.licdn.com/dms/image/C4E03AQEF9NKX3cStiw/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=3FMSzALtMZUUlaHl2gOKmrmVlrFmevLDy9RsGkWt0gU">
         </div>
-        <div class="col s9 rect">
+        <div class="col s9">
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/496121253&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          <div
+            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/eris221" title="Eris" target="_blank"
+              style="color: #cccccc; text-decoration: none;">Eris</a> ·
+            <a href="https://soundcloud.com/eris221/destiny-2-forsaken-original-15"
+              title="Destiny 2: Forsaken Original Soundtrack - Track 17 - Shell of What Was" target="_blank"
+              style="color: #cccccc; text-decoration: none;">Destiny 2: Forsaken Original Soundtrack - Track 17 - Shell
+              of What Was</a></div>
         </div>
       </div>
       <br>
@@ -138,9 +179,15 @@
             src="https://media-exp1.licdn.com/dms/image/C4E03AQECh0sZnXdNPQ/profile-displayphoto-shrink_400_400/0?e=1602115200&v=beta&t=vV31bTTqM1PKCM4U_ACVteWIBm9plf_JSpKoADftDTM">
         </div>
         <div class="col s9">
-          <audio autoplay="autoplay" controls="controls" class="left">
-            <source src="music/SweetDreams.mp3" />
-          </audio>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/256319851&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          <div
+            style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+            <a href="https://soundcloud.com/u2" title="U 2" target="_blank"
+              style="color: #cccccc; text-decoration: none;">U 2</a> · <a
+              href="https://soundcloud.com/u2/beautiful-day-1" title="Beautiful Day" target="_blank"
+              style="color: #cccccc; text-decoration: none;">Beautiful Day</a>
+          </div>
         </div>
       </div>
 
@@ -186,22 +233,53 @@
       </div> -->
       <h2 class="header">The Tech</h2>
       <hr>
-      <div class="tech-use">
-        <a href="">
-          <img class="class=" materialboxed" width="150"
-            src="https://miro.medium.com/max/1400/1*7AOhGDnRL2eyJMUidCHZEA.jpeg" atl="">
-        </a>
 
-        <a href="">
-          <img class="class=" materialboxed" width="85" src="https://image.flaticon.com/icons/svg/29/29515.svg" atl="">
-        </a>
+      <div class="row">
+        <div class="col s3">
+          <a href="">
+            <img class="class=" materialboxed" width="150"
+              src="https://miro.medium.com/max/1400/1*7AOhGDnRL2eyJMUidCHZEA.jpeg" atl="">
+          </a>
+        </div>
+        <div class="col s3">
+          <a href="">
+            <img class="class=" materialboxed" width="150"
+              src="https://raw.githubusercontent.com/docker-library/docs/c350af05d3fac7b5c3f6327ac82fe4d990d8729c/docker/logo.png"
+              atl="">
+          </a>
+        </div>
+        <div class="col s3">
+          <a href="">
+            <img class="class=" materialboxed center" width="150"
+              src="https://senturus.com/wp-content/uploads/2016/04/Tableau-New-Logo-April-12-2016.jpg" atl="">
+          </a>
+        </div>
       </div>
-      <div class="tech-use">
-        <a href="">
-          <img class="class=" materialboxed" width="150"
-            src="https://miro.medium.com/max/1260/1*j_zP74-cpvXRcs8dM_pkMQ.jpeg" atl="">
-        </a>
-      </div>
+      <div class="row">
+        <div class="col s3">
+          <a href="">
+            <img class="class=" materialboxed" width="150"
+              src="https://user-images.githubusercontent.com/30186107/29488525-f55a69d0-84da-11e7-8a39-5476f663b5eb.png"
+              atl="">
+          </a>
+        </div>
+        <div class="col s3">
+          <a href="">
+            <img class="class=" materialboxed center" width="100"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png"
+              atl="">
+          </a>
+        </div>
+        <div class="col s3">
+          <a href="">
+            <img class="class=" materialboxed center" width="100"
+              src="data:image/png;base64,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"
+              atl="">
+          </a>
+        </div>
+   </div>
+
+
 
     </div>
   </div>
@@ -214,85 +292,108 @@
     <div class="nav-content ">
       <ul class="tabs tabs-transparent">
         <li class="tab"><a href="#api">Data via API</a></li>
-        <li class="tab"><a href="#dance">Most Danceable Songs</a></li>
-        <li class="tab"><a class="active" href="#popular">Most Popular Songs</a></li>
-        <li class="tab"><a href="#attributes">Attributes that make Songs Popular</a></li>
+        <li class="tab"><a href="#visual">Visualization</a></li>
+        <li class="tab"><a class="active" href="#conclusion">Conclusion</a></li>
+        <!-- <li class="tab"><a href="#attributes">Attributes that make Songs Popular</a></li> -->
       </ul>
     </div>
   </nav>
 
   <div id="api" class="col s12">
     <h1>API Data</h1>
-    <iframe class="api_song" src="http://mighty-eyrie-17457.herokuapp.com/doc/" title="API" frameborder="0" allowfullscreen>
+    <iframe class="api_song" src="http://mighty-eyrie-17457.herokuapp.com/doc/" title="API" frameborder="0"
+      allowfullscreen>
     </iframe>
   </div>
 
   <!--Enter First Graph Here-->
-  <div id="dance" class="col s12">
-    <h1>ENTER HERE DANCE</h1>
+  <div id="visual" class="col s12">
+    <h1>ENTER HERE Visualization</h1>
+    <!-- <iframe class="visual_tab" src="https://public.tableau.com/views/MusicBeyondtheBeats/PopDancebyYear?:language=en&:display_count=y&:origin=viz_share_link" title="Visual" frameborder="0"
+    allowfullscreen>
+  </iframe>-->
 
+    <div class='tableauPlaceholder visual_tab' id='viz1596507202550' style='position: relative'>
+      <noscript><a href='#'>
+          <img alt=' '
+            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MusicBeyondtheBeats&#47;PopDancebyYear&#47;1_rss.png'
+            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='MusicBeyondtheBeats&#47;PopDancebyYear' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image'
+          value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MusicBeyondtheBeats&#47;PopDancebyYear&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en' /></object></div>
+    <script type='text/javascript'>
+      var divElement = document.getElementById('viz1596507202550');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      var scriptElement = document.createElement('script');
+      criptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
   </div>
   <!--Enter Second Graph Here-->
-  <div id="popular" class="col s12">
-    <h1>ENTER HERE POPULAR</h1>
+  <div id="conclusion" class="col s12">
+    <h1>ENTER HERE conclusion</h1>
   </div>
-  <!--Enter Third Graph Here-->
+  <!--Enter Third Graph Here
   <div id="attributes" class="col s12">
     <h1>ENTER HERE attributes</h1>
-  </div>
+  </div>-->
 </div>
 
 <!--Prediction Page-->
 <div class="a2">
+  <!--<h3>Prediction Page</h3>-->
+  <iframe class="elated-poitras-e16346" src="https://elated-poitras-e16346.netlify.app/" title="Popular_Prediction"
+    frameborder="0" allowfullscreen>
+  </iframe>
+
+  <!--End of Scaling-->
+
+</div>
+
+<!-- ML Page -->
+
+<div class="a3">
+  <h1>Machine Learning</h1>
   <div class="row">
-    <!--Add Scaling-->
     <div class="col s6">
-      <!--Slider 1-->
-      <h6>Danceability</h6>
-      <form action="#">
-        <p class="range-field">
-          <input type="range" id="test5" min="0" max="100" />
-        </p>
-      </form>
- <!--Slider 2-->
- <h6>Energy</h6>
- <form action="#">
-   <p class="range-field">
-     <input type="range" id="test5" min="0" max="100" />
-   </p>
- </form>
-
- <h6>Liveness</h6>
- <form action="#">
-   <p class="range-field">
-     <input type="range" id="test5" min="0" max="100" />
-   </p>
- </form>
-
-    <!--End of Scaling-->
+      <h3>Add MITI file and play</h3>
     </div>
-      <!--Side page-->
-    <div class="col s6">
-         <!--Top Side page-->   
-      <div class="row">
-        <!--Output of scaling with the values-->
-        <div class="col s12">
-          <h1>Values from Slider</h1>
-        </div>
+    <div class="col s">
+      <h3>Add Moving Visualization</h3>
+    </div>
+   <!-- <div class="col s3">
+      <a href="">
+        <img class="class=" materialboxed center" width="150"
+          src="https://senturus.com/wp-content/uploads/2016/04/Tableau-New-Logo-April-12-2016.jpg" atl="">
+      </a>
+    </div> -->
+  </div>
 
-      </div>
-      <div class="row">
-              <!--Results-->    
-              <div class="col s12">
-                <h1>RESULTS</h1>
-              </div>
+  <!-- Element Showed -->
+  <a id="menu" class="waves-effect waves-light btn btn-floating"><i class="material-icons">menu</i></a>
 
-      </div>
-
-
+  <!-- Tap Target Structure -->
+  <div class="tap-target" data-target="menu">
+    <div class="tap-target-content">
+      <h5>Title</h5>
+      <p>A bunch of text</p>
     </div>
   </div>
 </div>
+
+
 <!-- Footer -->
 <footer class="footer deep-orange lighten-2">
   <span class="bottom white-text">CCASS Final Project</span>

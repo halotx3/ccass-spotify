@@ -8,6 +8,8 @@ function start() {
       $('.parallax').parallax();
       $(".a1").hide();
       $(".a2").hide();
+      $(".a3").hide();
+      $('.tap-target').tapTarget();
     });
  
   };
@@ -24,6 +26,7 @@ function start() {
 
     $(".main").hide();
     $(".a2").hide();
+    $(".a3").hide();
     $(".a1").show();
   });
 
@@ -31,9 +34,37 @@ function start() {
 
     $(".main").hide();
     $(".a1").hide();
+    $(".a3").hide();
     $(".a2").show();
   });
+
+  $(".ml_pg").click(function () {
+
+    $(".main").hide();
+    $(".a1").hide();
+    $(".a2").hide();
+    $(".a3").show();
+  });
+ 
+  //tapping
   
+  var instance = M.TapTarget.getInstance(elem);
+  instance.next();
+  
+// image movement
+peeps.onclick = function() {
+  let start = Date.now();
+
+  let timer = setInterval(function() {
+    let timePassed = Date.now() - start;
+
+    peeps.style.left = timePassed / 5 + 'px';
+
+    if (timePassed > 2000) clearInterval(timer);
+
+  }, 20);
+}
+
   
   //Songs and D3 image
 var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
