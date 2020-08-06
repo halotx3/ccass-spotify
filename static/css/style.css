@@ -95,3 +95,20 @@
   font-size: 30px;
 };
 */
+#fileWrapper{
+	transition:all 0.5s ease;
+}
+#fileWrapper:hover{
+	opacity: 1!important;
+}
+
+#visualizer_wrapper{
+	text-align: center;
+}
+
+.a3 {
+  margin: 0;
+  font-family: arial, "Microsoft YaHei";
+  background-color: #272822;
+  color: #FEFEFE;
+}
