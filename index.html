@@ -367,21 +367,24 @@
 
 <!-- ML Page -->
 
+
+
 <div class="a3">
   <h1>Machine Learning</h1>
   <div class="row">
-    <div class="col s6">
-      <h3>Add MITI file and play</h3>
-    </div>
-    <div class="col s">
-      <h3>Add Moving Visualization</h3>
-    </div>
-    <!-- <div class="col s3">
-      <a href="">
-        <img class="class=" materialboxed center" width="150"
-          src="https://senturus.com/wp-content/uploads/2016/04/Tableau-New-Logo-April-12-2016.jpg" atl="">
-      </a>
-    </div> -->
+    <div id="wrapper">
+      <div id="fileWrapper" class="file_wrapper">
+          <div id="info">
+              HTML5 Audio API showcase | An Audio Viusalizer
+          </div>
+          <label for="uploadedFile">Drag&drop or select a file to play:</label>
+          <input type="file" id="uploadedFile"></input>
+      </div>
+      <div id="visualizer_wrapper">
+          <canvas id='canvas' width="800" height="350"></canvas>
+      </div>
+      <script type="text/javascript" src="static/js/html5_audio_visualizer.js"></script>
+  </div>
   </div>
 
   <!-- Element Showed -->
