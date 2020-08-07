@@ -10,6 +10,7 @@ function start() {
       $(".a2").hide();
       $(".a3").hide();
       $('.tap-target').tapTarget();
+      $('.modal').modal();
     });
  
   };

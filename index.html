@@ -322,16 +322,15 @@
     </div>
   </nav>
 
-  <div id="api" class="col s12">
+  <div id="api" class="col s12 clean_page">
     <h1>API Data</h1>
     <iframe class="api_song" id="myIframe" src="http://mighty-eyrie-17457.herokuapp.com/doc/" title="API" 
-    frameborder="0" style="overflow: hidden; height: 100%;
-    width: 100%; position: absolute;">
+    frameborder="0" >
     </iframe>
   </div>
 
   <!--Enter First Graph Here-->
-  <div id="visual" class="col s12">
+  <div id="visual" class="col s12 clean_page">
     <h1>ENTER HERE Visualization</h1>
     <div class='tableauPlaceholder' id='viz1596754784100' style='position: relative'><noscript><a href='#'><img alt=' '
             src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MusicBeyondtheBeats&#47;Dashboard22&#47;1_rss.png'
@@ -397,9 +396,8 @@
 <!--Prediction Page-->
 <div class="a2">
   <!--<h3>Prediction Page</h3>-->
-  <iframe class="elated-poitras-e16346" id="myIframe" src="https://elated-poitras-e16346.netlify.app/" title="Popular_Prediction"
-  frameborder="0" style="overflow: hidden; height: 100%;
-  width: 100%; position: absolute;" >
+  <iframe class="elated-poitras-e16346 clean_page" id="myIframe" src="https://elated-poitras-e16346.netlify.app/" title="Popular_Prediction"
+  frameborder="0"  >
   </iframe>
 
   <!--End of Scaling-->
@@ -410,8 +408,19 @@
 
 
 
-<div class="a3">
+<div class="a3 clean_page">
   <h1>Machine Learning</h1>
+    <!-- Model -->
+  <button data-target="modal1" class="btn modal-trigger">Conclusion</button>
+  <div id="modal1" class="modal" >
+    <div class="modal-content blue-text text-darken-2">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
   <div class="row">
     <div id="wrapper">
       <div id="fileWrapper" class="file_wrapper">
@@ -428,16 +437,8 @@
   </div>
   </div>
 
-  <!-- Element Showed -->
-  <a id="menu" class="waves-effect waves-light btn btn-floating"><i class="material-icons">menu</i></a>
 
-  <!-- Tap Target Structure -->
-  <div class="tap-target" data-target="menu">
-    <div class="tap-target-content">
-      <h5>Title</h5>
-      <p>A bunch of text</p>
-    </div>
-  </div>
+ 
 </div>
 
 
