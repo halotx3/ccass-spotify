@@ -10,6 +10,7 @@ function start() {
       $(".a2").hide();
       $(".a3").hide();
       $('.tap-target').tapTarget();
+      $('.modal').modal();
     });
  
   };
@@ -44,6 +45,11 @@ function start() {
     $(".a1").hide();
     $(".a2").hide();
     $(".a3").show();
+  });
+
+  //Add the model text from html page
+  $(function(){
+    $("#includedContent").load("music_lstm.html"); 
   });
  
   //tapping

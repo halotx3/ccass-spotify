@@ -66,6 +66,13 @@
   height: 700px;
 }
 
+.clean_page{
+  overflow: hidden;
+  height: 100%;
+  width: 100%; 
+  position: absolute;
+}
+
 /*
 .wrapper{
   position: relative;
