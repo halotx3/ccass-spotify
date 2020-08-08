@@ -50,7 +50,9 @@
   <div class="nav-wrapper black ">
 
     <!-- <a href="#" class="brand-logo center">CCASS Project 2</a> -->
-    <a href="#" class="brand-logo  " id="logo-canvas">Music beyond the beats </a>
+    <a href="#" class="brand-logo  " id="logo-canvas">
+      <img src="images/logo10.png">
+    </a>
     <!-- decide Music beyond the beats  Music in Motion-->
 
 
@@ -437,73 +439,59 @@
   <div id="modal1" class="modal bottom-sheet model-fixed-footer clean_page">
     <div class="modal-content  blue-text text-darken-2">
       <div class="row center">
-<<<<<<< HEAD
-        <!--<div id="includedContent"></div>-->
-        <iframe class="center" width="960" height="1015" src="music_lstm.html" frameborder="0" allowfullscreen></iframe>
-      </div>
-=======
-       <iframe class="center" width="960" height="1015" src="music_lstm.html" frameborder="0" allowfullscreen></iframe>
+         <!--<div id="includedContent">
+      </div>-->
+      <iframe class="center" width="960" height="1015" src="music_lstm.html" frameborder="0" allowfullscreen></iframe>
     </div>
->>>>>>> a54eec01d5513e74fd5c4105e986479eac78aced
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-    </div>
+    
+    <iframe class="center" width="960" height="1015" src="music_lstm.html" frameborder="0" allowfullscreen></iframe>
   </div>
-  <div class="row">
-    <div id="wrapper">
-<<<<<<< HEAD
-      <div id="fileWrapper" class="file_wrapper">
-        <div id="info">
-          HTML5 Audio API showcase | An Audio Viusalizer
-        </div>
-        <label for="uploadedFile">Drag&drop or select a file to play:</label>
-        <input type="file" id="uploadedFile"></input>
-      </div>
-      <div id="visualizer_wrapper">
-        <canvas id='canvas' width="800" height="350"></canvas>
-      </div>
-      <script type="text/javascript" src="static/js/html5_audio_visualizer.js"></script>
-    </div>
-=======
-      <div class="col s3">
-        <div class="row"></div>
-          <div id="content">
-            <!-- File selections and Audio Controls Section-->
-            <input type="file" id="thefile" accept="audio/*" />
-            <br><br>
-            <audio id="audio" controls></audio>
-            <!-- End File Selections and Audio Controls-->
-            <!-- This section is for the Play and Pause buttons for ML-Mozart and Rock -->
-            <!-- It can be removed if we decide to not use this section-->
-            <br><br><br><br>
-            <audio id="mlAudio">
-              <source src="static/audio/ml_mozart_2.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-            <audio id="rockAudio">
-              <source src="static/audio/splatoon_bgm_loop_small.ogg" type="audio/ogg">
-              Your browser does not support the audio element.
-            </audio>
-            <h3>Mozart Machine Learning</h3>
-            <button onclick="playml()" type="button">Play</button>
-            <button onclick="pauseml()" type="button">Pause</button> 
-            <h3>Rock Sample</h3>
-            <button onclick="playrock()" type="button">Play</button>
-            <button onclick="pauserock()" type="button">Pause</button> 
-            <!--End Button Section-->
-          </div>
-        </div>
-      </div>
-      <div class="col s1">
-      </div>
-      <div class="col s6">
-            <canvas id='canvas'>
-            </canvas>
-      </div>
-      <script type="text/javascript" src="static/js/audio.js"></script>
->>>>>>> a54eec01d5513e74fd5c4105e986479eac78aced
+ 
+</div>
+<div class="modal-footer">
+  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+</div>
+</div>
+
+<div class="col s3">
+  <div class="row"></div>
+  <div id="content">
+    <!-- File selections and Audio Controls Section-->
+    <input type="file" id="thefile" accept="audio/*" />
+    <br><br>
+    <audio id="audio" controls></audio>
+    <!-- End File Selections and Audio Controls-->
+    <!-- This section is for the Play and Pause buttons for ML-Mozart and Rock -->
+    <!-- It can be removed if we decide to not use this section-->
+    <br><br><br><br>
+    <audio id="mlAudio">
+      <source src="static/audio/ml_mozart_2.mp3" type="audio/mpeg">
+    
+    </audio>
+    <audio id="rockAudio">
+      <source src="static/audio/splatoon_bgm_loop_small.ogg" type="audio/ogg">
+  
+    </audio>
+    <h3>Mozart Machine Learning</h3>
+    <button onclick="playml()" type="button">Play</button>
+    <button onclick="pauseml()" type="button">Pause</button>
+    <h3>Rock Sample</h3>
+    <button onclick="playrock()" type="button">Play</button>
+    <button onclick="pauserock()" type="button">Pause</button>
+    <!--End Button Section-->
   </div>
+</div>
+
+</div>
+
+<div class="col s1">
+</div>
+<div class="col s6">
+  <canvas id='canvas'>
+  </canvas>
+</div>
+<script type="text/javascript" src="static/js/audio.js"></script>
+</div>
 
 
 
