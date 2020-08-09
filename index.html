@@ -376,8 +376,8 @@
       var vizElement = divElement.getElementsByTagName('object')[0]; 
       vizElement.style.width = '1600px'; 
       vizElement.style.height = '927px'; 
-      // vizElement.style.width = '1350px'; 
-      // vizElement.style.height = '800px'; 
+      // vizElement.style.width = '1200px'; 
+      // vizElement.style.height = '700px'; 
       var scriptElement = document.createElement('script'); 
       scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
       vizElement.parentNode.insertBefore(scriptElement, vizElement);
@@ -400,9 +400,9 @@
 <!-- ML Page -->
 
 <div class="a3 clean_page">
-  <center><h1>Music Machine Learned - Beats Visualized</h1></center>
+  <center><h1>Beats Visualized - Music Machine Created</h1></center>
     <div class="row">
-      <div class="col s2" style="padding-left: 40px;">
+      <div class="col s2 center" style="padding-left: 40px;">
         <div class="row">
         </div>
         <div id="content">
@@ -413,36 +413,35 @@
           <br>
           <input type="file" id="thefile" accept="audio/*" />
           <!-- End File Selections and Audio Controls-->
-          <br><br><br><br>
+          <br><br><hr>
           <h5>Sample Music</h5>
-            <a href="static/audio/ml_mozart_2.mp3" class="buttonDownload">Mozart Machine Learned</a>
+            <a href="static/audio/ml_mozart_2.mp3" class="buttonDownload">Mozart by AI</a>
             <br><br>
             <a href="static/audio/splatoon_bgm_loop_small.ogg" class="buttonDownload">Rock Sample</a>
-          <br><br><br><br>
-          <h5>Process</h5>
+          <br><br><hr><br><br>
+          <!-- <h5>Process</h5> -->
           <a class="waves-effect waves-light btn modal-trigger #ff5252 red accent-2 center" href="#modal1">Conclusion</a>
         </div>
       </div>
       <div class="col s8">
-        <center>
+      <center>
         <canvas id='canvas'>
         </canvas>
       </center>
       </div>
     </div>
-  <div id="modal1" class="modal bottom-sheet model-fixed-footer clean_page">
-    <div class="modal-content  blue-text text-darken-2">
-      <div class="row center">
-        <!-- <div id="includedContent"> -->
-        <iframe class="center" width="960" height="1015" src="music_lstm.html" frameborder="0" allowfullscreen></iframe>
-        <iframe class="center" width="960" height="1015" src="music_lstm.html" frameborder="0" allowfullscreen></iframe>
-      </div>  
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-      </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer ">
+    <div class="modal-content">
+      <iframe class="center clean_page" width="960" height="1015" src="music_lstm.html" frameborder="0"
+        allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
   </div>
-  <script type="text/javascript" src="static/js/audio.js"></script>
+  <!-- <script type="text/javascript" src="static/js/audio.js"></script> -->
 </div>
 <!--End of a3-->
 
@@ -456,7 +455,7 @@
 <!-- <script type="text/javascript" src="static/js/materialize.min.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script> -->
 <script src="static/js/app.js"></script>
-<!-- <script type="text/javascript" src="static/js/audio.js"></script> -->
+<script type="text/javascript" src="static/js/audio.js"></script>
 
 
 
