@@ -331,7 +331,6 @@
       <ul class="tabs tabs-transparent">
         <li class="tab"><a href="#api">Data via API</a></li>
         <li class="tab"><a href="#visual">Visualization</a></li>
-
         <!-- <li class="tab"><a class="active" href="#conclusion">Conclusion</a></li>-->
         <!-- <li class="tab"><a href="#attributes">Attributes that make Songs Popular</a></li> -->
       </ul>
@@ -340,38 +339,49 @@
 
   <div id="api" class="col s12">
     <h1>API Data</h1>
-    <iframe class="api_song clean_page" id="myIframe" src="http://mighty-eyrie-17457.herokuapp.com/doc/" title="API"
-      frameborder="0">
+    <iframe class="api_song clean_page" id="myIframe" src="http://mighty-eyrie-17457.herokuapp.com/doc/" title="API" frameborder="0">
     </iframe>
   </div>
 
   <!--Enter First Graph Here-->
   <div id="visual" class="col s12 clean_page">
     <!--<h1>ENTER HERE Visualization</h1>-->
-    <div class='tableauPlaceholder' id='viz1596917244483' style='position: relative'><noscript><a href='#'><img alt=' '
-            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MusicBeyondtheBeats&#47;MusicBeyondtheBeats&#47;1_rss.png'
-            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='MusicBeyondtheBeats&#47;MusicBeyondtheBeats' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image'
-          value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MusicBeyondtheBeats&#47;MusicBeyondtheBeats&#47;1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en' /></object></div>
+    <center>
+      <div class='tableauPlaceholder' id='viz1596917244483' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MusicBeyondtheBeats&#47;MusicBeyondtheBeats&#47;1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='MusicBeyondtheBeats&#47;MusicBeyondtheBeats' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mu&#47;MusicBeyondtheBeats&#47;MusicBeyondtheBeats&#47;1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en' />
+        </object>
+      </div>
+    </center>
     <script
       type='text/javascript'>                    
       var divElement = document.getElementById('viz1596917244483'); 
-      var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1600px'; 
-      vizElement.style.height = '927px'; var scriptElement = document.createElement('script'); 
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
+      var vizElement = divElement.getElementsByTagName('object')[0]; 
+      vizElement.style.width = '1600px'; 
+      vizElement.style.height = '927px'; 
+      // vizElement.style.width = '1350px'; 
+      // vizElement.style.height = '800px'; 
+      var scriptElement = document.createElement('script'); 
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
   </div>
 
 </div>
@@ -389,87 +399,50 @@
 
 <!-- ML Page -->
 
-
-
 <div class="a3 clean_page">
-  <h1>Machine Learning</h1>
-
-  <!--Skip add on-->
-  <div class="col s3">
-    <div class="row"></div>
-    <div id="content">
-      <!-- File selections and Audio Controls Section-->
-      <input type="file" id="thefile" accept="audio/*" />
-      <br><br>
-      <audio id="audio" controls></audio>
-      <!-- End File Selections and Audio Controls-->
-      <!-- This section is for the Play and Pause buttons for ML-Mozart and Rock -->
-      <!-- It can be removed if we decide to not use this section-->
-      <br><br><br><br>
-      <audio id="mlAudio">
-        <source src="static/audio/ml_mozart_2.mp3" type="audio/mpeg">
-
-      </audio>
-      <audio id="rockAudio">
-        <source src="static/audio/splatoon_bgm_loop_small.ogg" type="audio/ogg">
-
-      </audio>
-      <h3>Mozart Machine Learning</h3>
-      <button class="btn-floating btn-large waves-effect waves-light red" onclick="playml()" type="button">
-        <!--Play -->
-        <i class="large material-icons">play_circle_filled</i>
-      </button>
-      <svg class="" width="160" height="20" >
-       <line x1="20" x2="140" y1="10" y2="10" stroke="red" stroke-width="20" stroke-linecap="round"/>
-      </svg>
-      <button class="btn-floating btn-large waves-effect waves-light red" onclick="pauseml()" type="button">
-        <!--Pause -->
-        <i class="large material-icons">pause_circle_filled</i>
-
-      </button>
-      <h3>Rock Sample</h3>
-      <button onclick="playrock()" type="button">Play</button>
-      <button onclick="pauserock()" type="button">Pause</button>
-      <!--End Button Section-->
+  <center><h1>Music Machine Learned - Beats Visualized</h1></center>
+    <div class="row">
+      <div class="col s2" style="padding-left: 40px;">
+        <div class="row">
+        </div>
+        <div id="content">
+          <!-- File selections and Audio Controls Section-->
+          <br>
+          <h5>Audio Player</h5>
+          <audio id="audio" controls></audio>
+          <br>
+          <input type="file" id="thefile" accept="audio/*" />
+          <!-- End File Selections and Audio Controls-->
+          <br><br><br><br>
+          <h5>Sample Music</h5>
+            <a href="static/audio/ml_mozart_2.mp3" class="buttonDownload">Mozart Machine Learned</a>
+            <br><br>
+            <a href="static/audio/splatoon_bgm_loop_small.ogg" class="buttonDownload">Rock Sample</a>
+          <br><br><br><br>
+          <h5>Process</h5>
+          <a class="waves-effect waves-light btn modal-trigger #ff5252 red accent-2 center" href="#modal1">Conclusion</a>
+        </div>
+      </div>
+      <div class="col s8">
+        <center>
+        <canvas id='canvas'>
+        </canvas>
+      </center>
+      </div>
     </div>
-  </div>
-  <!--Skip second column-->
-  <div class="col s1">
-  </div>
-  <!--Skip third column-->
-  <div class="col s6">
-    <canvas id='canvas'>
-    </canvas>
-  </div>
-
-  <!-- Model NEW 20200808-->
-  <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger #ff5252 red accent-2 center" href="#modal1">Conclusion</a>
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal modal-fixed-footer ">
-    <div class="modal-content">
-      <iframe class="center clean_page" width="960" height="1015" src="music_lstm.html" frameborder="0"
-        allowfullscreen></iframe>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-    </div>
-  </div>
-  <!-- Model OLD-->
-  <!--
-  <button data-target="modal1" class="btn modal-trigger">Close</button>
   <div id="modal1" class="modal bottom-sheet model-fixed-footer clean_page">
     <div class="modal-content  blue-text text-darken-2">
       <div class="row center">
-         <!--<div id="includedContent">
-      </div>-->
-  <!-- <iframe class="center" width="960" height="1015" src="music_lstm.html" frameborder="0" allowfullscreen></iframe>
+        <!-- <div id="includedContent"> -->
+        <iframe class="center" width="960" height="1015" src="music_lstm.html" frameborder="0" allowfullscreen></iframe>
+        <iframe class="center" width="960" height="1015" src="music_lstm.html" frameborder="0" allowfullscreen></iframe>
+      </div>  
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
     </div>
-  <div class="modal-footer">
-  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-</div>-->
-
+  </div>
+  <script type="text/javascript" src="static/js/audio.js"></script>
 </div>
 <!--End of a3-->
 
@@ -483,7 +456,7 @@
 <!-- <script type="text/javascript" src="static/js/materialize.min.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script> -->
 <script src="static/js/app.js"></script>
-<script type="text/javascript" src="static/js/audio.js"></script>
+<!-- <script type="text/javascript" src="static/js/audio.js"></script> -->
 
 
 
