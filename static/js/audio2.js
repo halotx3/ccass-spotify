@@ -17,7 +17,7 @@ window.onload = function() {
 
     var canvas = document.getElementById("canvas");
     canvas.width = window.innerWidth * .50;
-    canvas.height = window.innerHeight * .60;
+    canvas.height = window.innerHeight * .90;
     var ctx = canvas.getContext("2d");
 
     src.connect(analyser);

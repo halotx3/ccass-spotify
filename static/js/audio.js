@@ -76,7 +76,7 @@ window.onload = function() {
       ctx.fillRect(0, 0, WIDTH, HEIGHT);
 
       for (var i = 0; i < bufferLength; i++) {
-        barHeight = dataArray[i];
+        barHeight = dataArray[i] * 2.0;
         
         var r = barHeight + (25 * (i/bufferLength));
         var g = 250 * (i/bufferLength);
