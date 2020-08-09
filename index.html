@@ -434,69 +434,38 @@
 
 <div class="a3 clean_page">
   <h1>Machine Learning</h1>
-  <!-- Model -->
   <button data-target="modal1" class="btn modal-trigger">Conclusion</button>
+    <div class="row">
+      <div class="col s3">
+        <div class="row">
+        </div>
+        <div id="content">
+          <!-- File selections and Audio Controls Section-->
+          <input type="file" id="thefile" accept="audio/*" />
+          <br><br>
+          <audio id="audio" controls></audio>
+          <!-- End File Selections and Audio Controls-->
+        </div>
+      </div>
+      <div class="col s9">
+        <canvas id='canvas'>
+        </canvas>
+      </div>
+    </div>
   <div id="modal1" class="modal bottom-sheet model-fixed-footer clean_page">
     <div class="modal-content  blue-text text-darken-2">
       <div class="row center">
-         <!--<div id="includedContent">
-      </div>-->
-      <iframe class="center" width="960" height="1015" src="music_lstm.html" frameborder="0" allowfullscreen></iframe>
+        <!-- <div id="includedContent"> -->
+        <iframe class="center" width="960" height="1015" src="music_lstm.html" frameborder="0" allowfullscreen></iframe>
+        <iframe class="center" width="960" height="1015" src="music_lstm.html" frameborder="0" allowfullscreen></iframe>
+      </div>  
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
     </div>
-    
-    <iframe class="center" width="960" height="1015" src="music_lstm.html" frameborder="0" allowfullscreen></iframe>
   </div>
- 
+  <script type="text/javascript" src="static/js/audio.js"></script>
 </div>
-<div class="modal-footer">
-  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-</div>
-</div>
-
-<div class="col s3">
-  <div class="row"></div>
-  <div id="content">
-    <!-- File selections and Audio Controls Section-->
-    <input type="file" id="thefile" accept="audio/*" />
-    <br><br>
-    <audio id="audio" controls></audio>
-    <!-- End File Selections and Audio Controls-->
-    <!-- This section is for the Play and Pause buttons for ML-Mozart and Rock -->
-    <!-- It can be removed if we decide to not use this section-->
-    <br><br><br><br>
-    <audio id="mlAudio">
-      <source src="static/audio/ml_mozart_2.mp3" type="audio/mpeg">
-    
-    </audio>
-    <audio id="rockAudio">
-      <source src="static/audio/splatoon_bgm_loop_small.ogg" type="audio/ogg">
-  
-    </audio>
-    <h3>Mozart Machine Learning</h3>
-    <button onclick="playml()" type="button">Play</button>
-    <button onclick="pauseml()" type="button">Pause</button>
-    <h3>Rock Sample</h3>
-    <button onclick="playrock()" type="button">Play</button>
-    <button onclick="pauserock()" type="button">Pause</button>
-    <!--End Button Section-->
-  </div>
-</div>
-
-</div>
-
-<div class="col s1">
-</div>
-<div class="col s6">
-  <canvas id='canvas'>
-  </canvas>
-</div>
-<script type="text/javascript" src="static/js/audio.js"></script>
-</div>
-
-
-
-</div>
-
 
 <!-- Footer -->
 <footer class="footer deep-orange lighten-2">
